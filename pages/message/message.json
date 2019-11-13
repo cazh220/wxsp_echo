@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "消息",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#4F88F7",
+  "usingComponents": {
+    "van-cell": "../../components/cell/index",
+    "van-cell-group": "../../components/cell-group/index",
+    "van-button": "../../components/button/index"
+  }
+}

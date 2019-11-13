@@ -1,0 +1,9 @@
+<!--pages/message/message.wxml-->
+<view>
+  qqqfdffd<navigator url="../logs/logs" hover-class="navigator-hover">日志</navigator>
+</view>
+<view>
+  <van-cell-group wx:for="{{message}}">
+    <van-cell title="{{item}}" value="" icon="location-o" />
+  </van-cell-group>
+</view>

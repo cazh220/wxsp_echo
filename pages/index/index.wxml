@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view>
+    <text bindtap="message">消息</text>
+  </view>
+
+  <view>
+  <input class="weui-input" bind:change="getUsName" auto-focus placeholder="账号"/>
+  <input class="weui-input" password type="text" bindinput="getPsW" placeholder="密码" />
+  <button type="default" 
+         bindtap="login" hover-class="other-button-hover"> 登陆 </button>
+  </view>
+  <view>
+  {{link}}
+  </view>
+  <navigator url='../logs/logs'>tiaozhuan</navigator>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
