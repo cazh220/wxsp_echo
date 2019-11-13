@@ -45,13 +45,10 @@ App({
     }
   },
   initLaravelEcho: function () {
-    // var login = wx.getStorageSync('login')
-    // var token = login.token.access_token
-    // console.log('token', login.token.access_token)
     let that = this
     that.globalData.laravelEcho = new Echo({
       broadcaster: 'socket.io',
-      host: 'https://service.58xiaoxiang.cn:6001',
+      host: 'https://host:6001',
       // auth: {
       //   headers: {
       //     'Authorization': 'Bearer ' + token
